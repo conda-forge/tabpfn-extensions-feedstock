@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn-extensions
-  version: 0.1.4
+  version: "0.1.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn_extensions-${{ version }}.tar.gz
-  sha256: 17b09b9a9308ea5f358d83abd0241e3314e8f5d5beb6d8170e533ed5c0399f35
+  sha256: 9dc8a8bac73a1d65e1385b31bc29a9d2e380fe226d2e76b90746696bd3e9c4ba
 
 build:
   number: 0
@@ -44,7 +44,7 @@ tests:
         os.environ["CI"] = "true"
         import tabpfn_extensions
   - script:
-    - pip check
+      - pip check
     requirements:
       run:
         - python ${{ python_min }}.*
