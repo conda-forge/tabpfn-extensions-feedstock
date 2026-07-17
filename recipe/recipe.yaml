@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn-extensions
-  version: "0.4.2"
+  version: 0.4.3
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn_extensions-${{ version }}.tar.gz
-  sha256: 801548abba76b2b879f06fd8fc4b5e429f0bbc6dc12e3cb7f1f21e6146517829
+  sha256: 7046265410766d2e3933da26bc9bc597f7f843da44e26b56c80e2ece008019d0
 
 build:
   number: 0
@@ -29,7 +29,7 @@ requirements:
     - pytorch >=2.1
     - scikit-learn >=1.6.0
     - scipy >=1.11.1
-    - tabpfn >=7.0.0
+    - tabpfn >=8.1.0
     - tabpfn-common-utils >=0.2.13
 tests:
   - script:
