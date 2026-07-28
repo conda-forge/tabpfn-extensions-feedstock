@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: tabpfn-extensions
-  version: 0.4.3
+  version: "0.5.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/tabpfn_extensions-${{ version }}.tar.gz
-  sha256: 7046265410766d2e3933da26bc9bc597f7f843da44e26b56c80e2ece008019d0
+  sha256: c3471f91e09c801772acdf75faa2688ed2d7896e760530240d44bb91ba752c70
 
 build:
   number: 0
